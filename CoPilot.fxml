@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root"  focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #E8F0E8;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinalproject.controller.CoPilotController">
+    <top>
+        <HBox prefHeight="65.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="49.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/PrepPilotLogo.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER_LEFT">
+            <children>
+                <Label prefHeight="37.0" prefWidth="213.0" text="How can I assist You?" textFill="#2e5d3c">
+                    <font>
+                        <Font name="Freestyle Script" size="34.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Label>
+                <TextArea fx:id="forDescription" prefHeight="193.0" prefWidth="420.0" promptText="Description here">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="90.0" right="90.0" />
+                    </VBox.margin>
+                </TextArea>
+                <TextField fx:id="forTopicToDescribe" prefHeight="38.0" prefWidth="100.0" promptText="Enter Text">
+                    <VBox.margin>
+                        <Insets left="200.0" right="300.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="10.0" />
+                    </padding>
+                </TextField>
+                <Button fx:id="sendBtn" mnemonicParsing="false" onAction="#askQuestion" prefHeight="37.0" prefWidth="107.0" style="-fx-background-color: white;" text="Search" textFill="#2e5d3c">
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

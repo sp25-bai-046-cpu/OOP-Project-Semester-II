@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root"  focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #E8F9F0;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinalproject.controller.TimeController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="277.3333333333333" layoutY="29.333333333333332" prefHeight="321.0" prefWidth="273.0" spacing="30.0" style="-fx-background-color: white; -fx-border-color: #2e3d5c;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label style="-fx-font-weight: bold;" text="Finally!! Quiz Completed..." textAlignment="CENTER" textFill="#2e5d3c" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Freestyle Script" size="37.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="timeLabel" style="-fx-text-fill: #2e5d3c; -fx-font-size: 15px; -fx-font-weight: bold;" text="Time taken:" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="remarksLabel" style="-fx-text-fill: #2e5d3c; -fx-font-size: 15px; -fx-font-weight: bold;" text="Remarks:" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Freestyle Script" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="progressBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goToProgress" style="-fx-border-color: #2e3d5c; -fx-border-radius: 15; -fx-background-color: #E8F8F0;" text="Move to Progress" textAlignment="CENTER" textFill="#2e5d3c">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="31.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PrepPilotLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

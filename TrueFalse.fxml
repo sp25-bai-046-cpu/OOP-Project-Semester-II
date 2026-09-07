@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane  fx:id="root"  focusTraversable="true" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #E8F0E8;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinalproject.controller.TrueFalseController">
+
+    <top>
+        <HBox prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="59.0" fitWidth="71.0" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/slide.png.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="10" BorderPane.alignment="CENTER">
+
+            <TextField fx:id="topicField" prefWidth="400" promptText="Enter Topic ...." style="-fx-background-color: white;">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="100.0" right="100.0" />
+                </VBox.margin>
+            </TextField>
+
+            <Button fx:id="generateBtn" onAction="#onGenerate" style="-fx-background-color: white; -fx-background-radius: 10;" text="Generate" />
+
+            <Label fx:id="questionLabel" text="Question statement" />
+
+            <!-- Radio Buttons (NO toggleGroup in FXML) -->
+            <RadioButton fx:id="trueRadio" text="True" onAction="#selectTrue" />
+            <RadioButton fx:id="falseRadio" text="False" onAction="#selectFalse" />
+
+            <Label text="Explanation" />
+            <TextArea fx:id="explainArea" prefHeight="80" prefWidth="450">
+            <VBox.margin>
+               <Insets left="100.0" right="100.0" />
+            </VBox.margin></TextArea>
+
+            <Label fx:id="progressLabel" text="" />
+
+            <Button fx:id="nextBtn" onAction="#onNext" style="-fx-background-color: white; -fx-background-radius: 10;" text="Next" />
+        </VBox>
+    </center>
+
+</BorderPane>

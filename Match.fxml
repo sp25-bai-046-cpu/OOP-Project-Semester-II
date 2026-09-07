@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane  fx:id="root" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #E8F0E8;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinalproject.controller.MatchController">
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="97.0" prefWidth="600.0">
+                    <children>
+                        <ImageView fitHeight="122.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/slide.png.jpg" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="20.0" top="10.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="110.0" fitWidth="167.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </HBox>
+                <VBox prefHeight="343.0" prefWidth="519.0">
+                    <children>
+                        <Label fx:id="topLabel" text=" Match ! Down the Slope" textFill="#2e5d3c">
+                            <VBox.margin>
+                                <Insets left="250.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Freestyle Script" size="37.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="leftCol" text="Left Column" textFill="#2e5d3c">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="rightCol" text="Right Column" textFill="#2e5d3c">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="550.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label fx:id="left1" onMouseClicked="#onLeftClicked" text="l1">
+                            <VBox.margin>
+                                <Insets left="50.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="right1" onMouseClicked="#onRightClicked" text="r1">
+                            <VBox.margin>
+                                <Insets left="600.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label fx:id="left2" onMouseClicked="#onLeftClicked" text="l2">
+                            <VBox.margin>
+                                <Insets left="50.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="right2" onMouseClicked="#onRightClicked" text="r2">
+                            <VBox.margin>
+                                <Insets left="600.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label fx:id="left3" onMouseClicked="#onLeftClicked" text="l3">
+                            <VBox.margin>
+                                <Insets left="50.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="right3" onMouseClicked="#onRightClicked" text="r3">
+                            <VBox.margin>
+                                <Insets left="600.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label fx:id="left4" onMouseClicked="#onLeftClicked" text="l4">
+                            <VBox.margin>
+                                <Insets left="50.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="right4" onMouseClicked="#onRightClicked" text="r4">
+                            <VBox.margin>
+                                <Insets left="600.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label fx:id="left5" onMouseClicked="#onLeftClicked" text="l5">
+                            <VBox.margin>
+                                <Insets left="50.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="right5" onMouseClicked="#onRightClicked" text="r5">
+                            <VBox.margin>
+                                <Insets left="600.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label fx:id="detailLabel" text="Details" textFill="#2e5d3c">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="120.0" top="70.0" />
+                            </VBox.margin>
+                        </Label>
+                  <TextArea fx:id="detailArea" prefHeight="200.0" prefWidth="200.0" />
+                    </children>
+                    <padding>
+                        <Insets left="150.0" right="50.0" />
+                    </padding>
+                </VBox>
+            </children>
+            <padding>
+                <Insets right="100.0" />
+            </padding>
+        </VBox>
+    </center>
+</BorderPane>

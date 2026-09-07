@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #E8F0E8;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinalproject.controller.MenuController">
+   <center>
+      <VBox prefHeight="297.0" prefWidth="34.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="580.0" top="140.0" />
+         </BorderPane.margin>
+         <children>
+            <Button fx:id="studyMaterialBt" mnemonicParsing="false" onAction="#StudyMaterialBt_pressed" style="-fx-background-color: #2e5d3c; -fx-background-radius: 10;" text="Study Material" textFill="#e8f0e8">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="practiceQuiz1Bt" mnemonicParsing="false" onAction="#PracticeQuiz1Bt_pressed" style="-fx-background-color: #2e5d3c; -fx-background-radius: 10;" text="   MCQ Quiz" textAlignment="CENTER" textFill="#e8f0e8">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" right="65.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="practiceQuiz2Bt" mnemonicParsing="false" onAction="#PracticeQuiz2Bt_pressed" style="-fx-background-color: #2e5d3c; -fx-background-radius: 10;" text="Mini Challenge" textFill="#e8f0e8">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" right="47.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="copilotBt" mnemonicParsing="false" onAction="#CopilotBt_pressed" style="-fx-background-color: #2e5d3c; -fx-background-radius: 10;" text="     Co-pilot" textFill="#e8f0e8">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" right="70.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutBt" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#setLogoutBt_pressed" style="-fx-background-color: #2e5d3c; -fx-background-radius: 10;" text="    Log out" textFill="#e8f0e8">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" right="80.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#setExitBt_pressed" style="-fx-background-color: #2e5d3c; -fx-background-radius: 10;" text="       Exit" textFill="#e8f0e8">
+               <padding>
+                  <Insets bottom="10.0" left="50.0" right="88.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <ImageView fitHeight="92.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="BOTTOM_LEFT">
+         <image>
+            <Image url="@../images/PrepPilotLogo.png" />
+         </image>
+      </ImageView>
+   </top>
+</BorderPane>
