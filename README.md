@@ -20,8 +20,6 @@ An interactive Java application that combines **Object-Oriented Programming (OOP
     *   *Encapsulation* for secure data management.
     *   *Inheritance & Polymorphism* for flexible quiz module creation.
     *   *Abstraction* for clean AI service integration.
-## JAVAFX and UI
-
 
 ##  Getting Started
 
